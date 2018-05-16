@@ -10,4 +10,9 @@
 
 @interface CustomeTableViewCell : UITableViewCell
 
+@property UIImageView *imageview;
+@property UILabel *titleLabel;
+@property UILabel *descLabel;
+
+@property UIActivityIndicatorView *activityView;
 @end

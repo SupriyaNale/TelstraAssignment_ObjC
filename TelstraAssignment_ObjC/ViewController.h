@@ -7,8 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CustomeTableViewCell.h"
 
-@interface ViewController : UIViewController
+
+@interface ViewController : UIViewController < UITableViewDataSource , UITableViewDelegate>
+
+//MARK:- Properties
+@property (strong, nonatomic) UITableView *tableView;
+@property (strong, nonatomic) NSArray *fetchedData;
+
+@property (strong, nonatomic) UIRefreshControl *refreshCtrl;
+@property (strong, nonatomic) NSCache *cache;
+@property (strong, nonatomic) NSURLSessionDownloadTask *task;
+@property (strong, nonatomic) NSURLSession *session;
+
+@property (strong, nonatomic) UIActivityIndicatorView *activityView;
+@property (strong, nonatomic) UIActivityIndicatorView *loadingView;
 
 
 @end

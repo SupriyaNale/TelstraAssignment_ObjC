@@ -15,6 +15,11 @@
 		D3C7B1BD20ABF4AD0015CE34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C7B1BB20ABF4AD0015CE34 /* LaunchScreen.storyboard */; };
 		D3C7B1C820ABF4AE0015CE34 /* TelstraAssignment_ObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C7B1C720ABF4AE0015CE34 /* TelstraAssignment_ObjCTests.m */; };
 		D3C7B1D320ABF4AE0015CE34 /* TelstraAssignment_ObjCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C7B1D220ABF4AE0015CE34 /* TelstraAssignment_ObjCUITests.m */; };
+		D3C7B1EA20AC0DED0015CE34 /* CustomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C7B1E920AC0DED0015CE34 /* CustomeTableViewCell.m */; };
+		D3C7B1ED20AC38930015CE34 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C7B1EC20AC38930015CE34 /* SystemConfiguration.framework */; };
+		D3C7B1F020AC38C70015CE34 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C7B1EF20AC38C70015CE34 /* Reachability.m */; };
+		D3C7B1F720AC3BBD0015CE34 /* UIAlertController+show.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C7B1F620AC3BBD0015CE34 /* UIAlertController+show.m */; };
+		D3C7B1FA20AC406F0015CE34 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C7B1F920AC406F0015CE34 /* DataModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,16 @@
 		D3C7B1CE20ABF4AE0015CE34 /* TelstraAssignment_ObjCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelstraAssignment_ObjCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C7B1D220ABF4AE0015CE34 /* TelstraAssignment_ObjCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TelstraAssignment_ObjCUITests.m; sourceTree = "<group>"; };
 		D3C7B1D420ABF4AE0015CE34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3C7B1E620AC09B30015CE34 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		D3C7B1E820AC0DED0015CE34 /* CustomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomeTableViewCell.h; sourceTree = "<group>"; };
+		D3C7B1E920AC0DED0015CE34 /* CustomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomeTableViewCell.m; sourceTree = "<group>"; };
+		D3C7B1EC20AC38930015CE34 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D3C7B1EE20AC38C70015CE34 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		D3C7B1EF20AC38C70015CE34 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		D3C7B1F520AC3BBD0015CE34 /* UIAlertController+show.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+show.h"; sourceTree = "<group>"; };
+		D3C7B1F620AC3BBD0015CE34 /* UIAlertController+show.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+show.m"; sourceTree = "<group>"; };
+		D3C7B1F820AC406F0015CE34 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		D3C7B1F920AC406F0015CE34 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3C7B1ED20AC38930015CE34 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +101,7 @@
 				D3C7B1C620ABF4AE0015CE34 /* TelstraAssignment_ObjCTests */,
 				D3C7B1D120ABF4AE0015CE34 /* TelstraAssignment_ObjCUITests */,
 				D3C7B1AB20ABF4AD0015CE34 /* Products */,
+				D3C7B1EB20AC38930015CE34 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +118,10 @@
 		D3C7B1AC20ABF4AD0015CE34 /* TelstraAssignment_ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				D3C7B1FB20AC40790015CE34 /* Model */,
+				D3C7B1F120AC38CB0015CE34 /* Networking */,
+				D3C7B1E720AC0DC50015CE34 /* View */,
+				D3C7B1E320ABFCE10015CE34 /* Utilities */,
 				D3C7B1B020ABF4AD0015CE34 /* AppDelegate.h */,
 				D3C7B1B120ABF4AD0015CE34 /* AppDelegate.m */,
 				D3C7B1B320ABF4AD0015CE34 /* ViewController.h */,
@@ -138,6 +159,51 @@
 				D3C7B1D420ABF4AE0015CE34 /* Info.plist */,
 			);
 			path = TelstraAssignment_ObjCUITests;
+			sourceTree = "<group>";
+		};
+		D3C7B1E320ABFCE10015CE34 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D3C7B1E620AC09B30015CE34 /* Constant.h */,
+				D3C7B1F520AC3BBD0015CE34 /* UIAlertController+show.h */,
+				D3C7B1F620AC3BBD0015CE34 /* UIAlertController+show.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		D3C7B1E720AC0DC50015CE34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D3C7B1E820AC0DED0015CE34 /* CustomeTableViewCell.h */,
+				D3C7B1E920AC0DED0015CE34 /* CustomeTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D3C7B1EB20AC38930015CE34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3C7B1EC20AC38930015CE34 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3C7B1F120AC38CB0015CE34 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D3C7B1EE20AC38C70015CE34 /* Reachability.h */,
+				D3C7B1EF20AC38C70015CE34 /* Reachability.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		D3C7B1FB20AC40790015CE34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D3C7B1F820AC406F0015CE34 /* DataModel.h */,
+				D3C7B1F920AC406F0015CE34 /* DataModel.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,9 +342,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3C7B1EA20AC0DED0015CE34 /* CustomeTableViewCell.m in Sources */,
 				D3C7B1B520ABF4AD0015CE34 /* ViewController.m in Sources */,
 				D3C7B1B220ABF4AD0015CE34 /* AppDelegate.m in Sources */,
 				D3C7B1AF20ABF4AD0015CE34 /* main.m in Sources */,
+				D3C7B1FA20AC406F0015CE34 /* DataModel.m in Sources */,
+				D3C7B1F020AC38C70015CE34 /* Reachability.m in Sources */,
+				D3C7B1F720AC3BBD0015CE34 /* UIAlertController+show.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
