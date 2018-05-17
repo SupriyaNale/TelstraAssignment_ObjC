@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D30B21B620AD8FCE00E34E7A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C7B1B420ABF4AD0015CE34 /* ViewController.m */; };
 		D3C7B1AF20ABF4AD0015CE34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C7B1AE20ABF4AD0015CE34 /* main.m */; };
 		D3C7B1B220ABF4AD0015CE34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C7B1B120ABF4AD0015CE34 /* AppDelegate.m */; };
 		D3C7B1B520ABF4AD0015CE34 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C7B1B420ABF4AD0015CE34 /* ViewController.m */; };
 		D3C7B1B820ABF4AD0015CE34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C7B1B620ABF4AD0015CE34 /* Main.storyboard */; };
 		D3C7B1BA20ABF4AD0015CE34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3C7B1B920ABF4AD0015CE34 /* Assets.xcassets */; };
 		D3C7B1BD20ABF4AD0015CE34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C7B1BB20ABF4AD0015CE34 /* LaunchScreen.storyboard */; };
-		D3C7B1C820ABF4AE0015CE34 /* TelstraAssignment_ObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C7B1C720ABF4AE0015CE34 /* TelstraAssignment_ObjCTests.m */; };
 		D3C7B1D320ABF4AE0015CE34 /* TelstraAssignment_ObjCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C7B1D220ABF4AE0015CE34 /* TelstraAssignment_ObjCUITests.m */; };
 		D3C7B1EA20AC0DED0015CE34 /* CustomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C7B1E920AC0DED0015CE34 /* CustomeTableViewCell.m */; };
 		D3C7B1ED20AC38930015CE34 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C7B1EC20AC38930015CE34 /* SystemConfiguration.framework */; };
@@ -362,7 +362,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3C7B1C820ABF4AE0015CE34 /* TelstraAssignment_ObjCTests.m in Sources */,
+				D30B21B620AD8FCE00E34E7A /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +506,7 @@
 				DEVELOPMENT_TEAM = X78BQYR3TH;
 				INFOPLIST_FILE = TelstraAssignment_ObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.infosys.TelstraAssignment-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -518,6 +519,7 @@
 				DEVELOPMENT_TEAM = X78BQYR3TH;
 				INFOPLIST_FILE = TelstraAssignment_ObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.infosys.TelstraAssignment-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

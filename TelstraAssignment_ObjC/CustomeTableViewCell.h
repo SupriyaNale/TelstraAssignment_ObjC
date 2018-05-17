@@ -14,5 +14,4 @@
 @property UILabel *titleLabel;
 @property UILabel *descLabel;
 
-@property UIActivityIndicatorView *activityView;
 @end

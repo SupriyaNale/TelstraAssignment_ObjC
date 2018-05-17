@@ -11,20 +11,20 @@
 @implementation DataModel
 
 -(id)initWithJson:(NSDictionary *)json {
-    if ([json[@"title"] isKindOfClass:[NSString class]])
+    if ([json[@"title"] isKindOfClass:[NSString class]]) {
         self.title = json[@"title"];
-    else
-        self.title = @"";
+    }
+    else self.title = @"";
     
-    if ([json[@"description"] isKindOfClass:[NSString class]])
+    if ([json[@"description"] isKindOfClass:[NSString class]]) {
         self.desc = json[@"description"] ;
-    else
-        self.desc = @"";
+    }
+    else self.desc = @"";
     
-    if ([json[@"imageHref"] isKindOfClass:[NSString class]])
+    if ([json[@"imageHref"] isKindOfClass:[NSString class]]) {
         self.imageURL = json[@"imageHref"];
-    else
-        self.imageURL = @"";
+    }
+    else self.imageURL = @"";
     
     return self;
 }

@@ -7,9 +7,12 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "ViewController.h"
 
 @interface TelstraAssignment_ObjCTests : XCTestCase
-
+{
+    ViewController *viewControllerObj;
+}
 @end
 
 @implementation TelstraAssignment_ObjCTests
@@ -17,6 +20,14 @@
 - (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    viewControllerObj = [storyBoard instantiateViewControllerWithIdentifier:@"ViewController"];
+    XCTAssertNotNil(viewControllerObj, @"ViewController not initiated properly");
+    
+    [viewControllerObj performSelectorOnMainThread:@selector(loadView) withObject:nil waitUntilDone:YES];
+    [viewControllerObj performSelectorOnMainThread:@selector(viewDidLoad) withObject:nil waitUntilDone:YES];
 }
 
 - (void)tearDown {
@@ -35,5 +46,24 @@
         // Put the code you want to measure the time of here.
     }];
 }
+
+- (void)testThatViewConformsToTableViewDelegate {
+    XCTAssertTrue([viewControllerObj conformsToProtocol:@protocol(UITableViewDelegate)],@"ViewController conforms to UITableViewDelegate");
+}
+
+- (void)testThatViewConformsToTableViewDatasource {
+    XCTAssertTrue([viewControllerObj conformsToProtocol:@protocol(UITableViewDataSource)],@"ViewController conforms to UITableViewDataSource");
+}
+
+
+- (void)testThatViewLoads {
+    XCTAssertNotNil(viewControllerObj, "ViewController View not initiated properly");
+}
+
+
+- (void)testThatTableViewLoads {
+    XCTAssertNotNil(viewControllerObj.tableView, "TableView not initiated");
+}
+
 
 @end

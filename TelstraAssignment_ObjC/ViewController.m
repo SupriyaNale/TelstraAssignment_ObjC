@@ -6,13 +6,19 @@
 //  Copyright © 2018 infosys. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "Constant.h"
-#import "Reachability.h"
+// Frameworks
 #import <SystemConfiguration/SystemConfiguration.h>
-#import "UIAlertController+show.h"
+
+// Models
 #import "ResponseParser.h"
 #import "DataModel.h"
+#import "Constant.h"
+#import "Reachability.h"
+
+// Views
+#import "ViewController.h"
+#import "UIAlertController+show.h"
+
 
 @interface ViewController ()
 {
@@ -62,10 +68,12 @@
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    if (self.fetchedData.count > 0)
+    if (self.fetchedData.count > 0) {
         return self.fetchedData.count;
-    else
+    }
+    else {
         return 0;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -126,7 +134,8 @@
         [self.activityView stopAnimating];
         UIImage *img = [self.cache objectForKey:data.imageURL];
         [cell.imageview setImage:img];
-    } else {
+    }
+    else {
         NSURL *imageUrl = [NSURL URLWithString:data.imageURL];
         NSLog(@"image URL : %@",imageUrl);
         //download using URL session
@@ -181,14 +190,14 @@
 
                 });
             }
-            else
-            {
+            else {
                 NSLog(@"Error");     
             }
         }];
         [dataTask resume];
         
-    } else {
+    }
+    else {
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.loadingView stopAnimating];
             [UIAlertController showAlertMessage:networkError];

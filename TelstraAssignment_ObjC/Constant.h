@@ -11,7 +11,7 @@
 
 static NSString *baseURL = @"https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json";
 
-static CGFloat rowHeight = 200.0f;
+static float rowHeight = 200.0f;
 
 static NSString *unexpectedError = @"Sorry! Unexpected error";
 static NSString *title = @"Title";
