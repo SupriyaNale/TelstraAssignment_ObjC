@@ -20,6 +20,7 @@
 		D3C7B1F020AC38C70015CE34 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C7B1EF20AC38C70015CE34 /* Reachability.m */; };
 		D3C7B1F720AC3BBD0015CE34 /* UIAlertController+show.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C7B1F620AC3BBD0015CE34 /* UIAlertController+show.m */; };
 		D3C7B1FA20AC406F0015CE34 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C7B1F920AC406F0015CE34 /* DataModel.m */; };
+		D3D6B03520AD46B2006EF0AB /* ResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D6B03420AD46B2006EF0AB /* ResponseParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		D3C7B1F620AC3BBD0015CE34 /* UIAlertController+show.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+show.m"; sourceTree = "<group>"; };
 		D3C7B1F820AC406F0015CE34 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
 		D3C7B1F920AC406F0015CE34 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		D3D6B03320AD46B2006EF0AB /* ResponseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseParser.h; sourceTree = "<group>"; };
+		D3D6B03420AD46B2006EF0AB /* ResponseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +205,8 @@
 			children = (
 				D3C7B1F820AC406F0015CE34 /* DataModel.h */,
 				D3C7B1F920AC406F0015CE34 /* DataModel.m */,
+				D3D6B03320AD46B2006EF0AB /* ResponseParser.h */,
+				D3D6B03420AD46B2006EF0AB /* ResponseParser.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -349,6 +354,7 @@
 				D3C7B1FA20AC406F0015CE34 /* DataModel.m in Sources */,
 				D3C7B1F020AC38C70015CE34 /* Reachability.m in Sources */,
 				D3C7B1F720AC3BBD0015CE34 /* UIAlertController+show.m in Sources */,
+				D3D6B03520AD46B2006EF0AB /* ResponseParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,6 +592,7 @@
 				D3C7B1D920ABF4AE0015CE34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3C7B1DA20ABF4AE0015CE34 /* Build configuration list for PBXNativeTarget "TelstraAssignment_ObjCTests" */ = {
 			isa = XCConfigurationList;
@@ -594,6 +601,7 @@
 				D3C7B1DC20ABF4AE0015CE34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3C7B1DD20ABF4AE0015CE34 /* Build configuration list for PBXNativeTarget "TelstraAssignment_ObjCUITests" */ = {
 			isa = XCConfigurationList;
@@ -602,6 +610,7 @@
 				D3C7B1DF20ABF4AE0015CE34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

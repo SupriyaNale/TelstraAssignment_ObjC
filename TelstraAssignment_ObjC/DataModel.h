@@ -11,7 +11,9 @@
 @interface DataModel : NSObject
 
 @property(strong, nonatomic) NSString *title;
-@property(strong, nonatomic) NSString *description;
+@property(strong, nonatomic) NSString *desc;
 @property(strong, nonatomic) NSString *imageURL;
+
+-(id)initWithJson:(NSDictionary *)json;
 
 @end

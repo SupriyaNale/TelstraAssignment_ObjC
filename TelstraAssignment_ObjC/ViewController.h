@@ -14,7 +14,7 @@
 
 //MARK:- Properties
 @property (strong, nonatomic) UITableView *tableView;
-@property (strong, nonatomic) NSArray *fetchedData;
+@property (strong, nonatomic) NSMutableArray *fetchedData;
 
 @property (strong, nonatomic) UIRefreshControl *refreshCtrl;
 @property (strong, nonatomic) NSCache *cache;
